@@ -4,25 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Santhoshini Thanniru Portfolio</title>
-    <link rel="stylesheet" href="style.css"> <!-- keep your CSS if you have -->
+    <style>
+        /* Reset & basic styles */
+        body { font-family: Arial, sans-serif; margin:0; padding:0; background: #f5f5f5; color: #333; }
+        a { text-decoration: none; color: white; }
+        h1, h2, h3 { margin: 0.5em 0; }
+        section { padding: 50px 20px; max-width: 900px; margin: auto; }
+
+        /* Header */
+        header { background: #4e73df; color: white; text-align: center; padding: 60px 20px; }
+        header img { width: 150px; height: 150px; border-radius: 50%; margin-bottom: 20px; object-fit: cover; border: 4px solid white; }
+        header h1 { font-size: 2.5em; margin-bottom: 10px; }
+        header h3 { font-size: 1.5em; font-weight: normal; }
+
+        /* Buttons */
+        .btn { display: inline-block; padding: 10px 20px; margin: 10px 5px; background: #4e73df; color: white; border-radius: 25px; transition: 0.3s; }
+        .btn:hover { background: #2e59d9; }
+
+        /* Sections */
+        section h2 { text-align: center; color: #4e73df; margin-bottom: 30px; }
+        ul { list-style-type: none; padding: 0; }
+        ul li { background: white; margin: 10px 0; padding: 10px 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+
+        /* Contact section */
+        #contact .btn { margin: 10px; }
+
+        /* Skills / Expertise cards */
+        .skills-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 15px; }
+        .skill { background: #4e73df; color: white; padding: 20px; border-radius: 10px; text-align: center; font-weight: bold; }
+
+        /* Footer */
+        footer { text-align: center; padding: 20px; background: #2e59d9; color: white; }
+    </style>
 </head>
 <body>
 
 <!-- Header / Hero -->
 <header>
+    <img src="https://via.placeholder.com/150" alt="Santhoshini Thanniru">
     <h1>SANTHOSHINI THANNIRU</h1>
     <h3>CERTIFICATE IN AI & DATA ANALYTICS</h3>
-    <p>Looking for a role in data analytics where I can apply my skills to support business decisions and contribute to company growth.</p>
+    <p>Looking for a role in data analytics to support business decisions and contribute to company growth.</p>
+    <a href="https://linkedin.com/in/santhoshini-thanniru" class="btn">LinkedIn</a>
+    <a href="https://github.com/santhoshini-thanniru-Portfolio" class="btn">GitHub</a>
 </header>
-
-<!-- Contact -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Phone: +91 9704300462</p>
-    <p>Email: santhoshini.thanniru@gmail.com</p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/santhoshini-thanniru">linkedin.com/in/santhoshini-thanniru</a></p>
-    <p>GitHub: <a href="https://github.com/santhoshini-thanniru-Portfolio">github.com/santhoshini-thanniru-Portfolio</a></p>
-</section>
 
 <!-- Career Objective -->
 <section id="career-objective">
@@ -41,19 +66,19 @@
     </ul>
 </section>
 
-<!-- Technical Skills -->
+<!-- Skills -->
 <section id="skills">
-    <h2>Technical Skills / Expertise</h2>
-    <ul>
-        <li>Python</li>
-        <li>MySQL</li>
-        <li>Excel</li>
-        <li>Power BI</li>
-        <li>Machine Learning</li>
-        <li>SQL</li>
-        <li>Pandas</li>
-        <li>Data Visualization</li>
-    </ul>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="skill">Python</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">Excel</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">SQL</div>
+        <div class="skill">Pandas</div>
+        <div class="skill">Data Visualization</div>
+    </div>
 </section>
 
 <!-- Education -->
@@ -68,7 +93,7 @@
 
 <!-- Achievements -->
 <section id="achievements">
-    <h2>Achievements / Certifications</h2>
+    <h2>Achievements / Projects</h2>
     <ul>
         <li>Certificate in AI Data Analytics from Tech Mahindra SMART Academy, Hyderabad</li>
         <li>Project: Blood Bank Management System
@@ -84,12 +109,24 @@
 <section id="hobbies">
     <h2>Hobbies</h2>
     <ul>
-        <li>Browsing the internet for the latest updates on AI and Data Analytics</li>
+        <li>Browsing the internet for AI & Data Analytics updates</li>
         <li>Watching movies</li>
         <li>Cooking</li>
         <li>Listening to music</li>
     </ul>
 </section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <a href="mailto:santhoshini.thanniru@gmail.com" class="btn">Email</a>
+    <a href="tel:+919704300462" class="btn">Call</a>
+</section>
+
+<!-- Footer -->
+<footer>
+    &copy; 2026 Santhoshini Thanniru
+</footer>
 
 </body>
 </html>
