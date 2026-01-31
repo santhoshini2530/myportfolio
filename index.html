@@ -62,6 +62,25 @@ header p {
     background:#357a38;
 }
 
+/* DOWNLOAD BUTTON - CLASSY & BOUNCY */
+.download-btn {
+    display:inline-block;
+    margin:20px auto 0 auto;
+    padding:15px 35px;
+    background:#357a38;
+    color:white;
+    border-radius:30px;
+    font-weight:bold;
+    text-decoration:none;
+    transition:0.3s;
+    transform:scale(1);
+}
+.download-btn:hover {
+    background:#4caf50;
+    transform:scale(1.1);
+    box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
 /* SECTIONS */
 section {
     max-width:900px;
@@ -114,23 +133,6 @@ footer {
     color:white;
     font-weight:bold;
 }
-
-/* DOWNLOAD BUTTON */
-.download-btn {
-    display:inline-block;
-    margin:20px auto 0 auto;
-    padding:15px 35px;
-    background:#357a38;
-    color:white;
-    border-radius:30px;
-    font-weight:bold;
-    text-decoration:none;
-    transition:0.3s;
-}
-.download-btn:hover {
-    background:#4caf50;
-    transform:scale(1.1);
-}
 </style>
 </head>
 <body>
@@ -144,7 +146,8 @@ footer {
     <a href="https://linkedin.com/in/santhoshini-thanniru" class="btn">LinkedIn</a>
     <a href="https://github.com/santhoshini-thanniru-Portfolio" class="btn">GitHub</a>
     <a href="mailto:santhoshini.thanniru@gmail.com" class="btn">Email</a>
-    <a href="Resume.pdf" class="download-btn" download>Download Resume</a>
+    <!-- Download Resume Button -->
+    <a href="https://github.com/santhoshini2530/myportfolio/raw/main/Resume.pdf" class="download-btn" download>Download Resume</a>
 </header>
 
 <!-- CAREER OBJECTIVE -->
